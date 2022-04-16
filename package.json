@@ -1,0 +1,22 @@
+{
+  "name": "seedlings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLevius/seedlings.git"
+  },
+  "keywords": [
+    "seedlings"
+  ],
+  "author": "TheLevius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheLevius/seedlings/issues"
+  },
+  "homepage": "https://github.com/TheLevius/seedlings#readme"
+}
