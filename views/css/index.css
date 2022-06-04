@@ -457,7 +457,7 @@ body {
 .header, .main, .footer {
     width: 100%;
     min-width: 32rem;
-    max-width: 32rem;
+    max-width: 48rem;
     margin: 0 auto;
 }
 
@@ -592,10 +592,6 @@ body {
     padding-bottom: 100%;
     background-color: rgba(0, 0, 0, 0.01);
 }
-.gallery {
-    display: flex;
-
-}
 .accordion {
     display: flex;
     flex-direction: column;
@@ -657,7 +653,7 @@ body {
     letter-spacing: 0.08rem;
 }
 .price-grid__price-value {
-    justify-self: center;
+    justify-self: stretch;
     align-self: center;
 }
 
@@ -669,19 +665,29 @@ body {
     letter-spacing: 0.08rem;
     text-transform: uppercase;
 }
+.price-grid__price-header {
+    text-align: center;
+    justify-self: stretch;
+}
+.price-grid__price-header > span {
+    display: block;
+    float: right;
+    width: 6rem;
+    padding: 0 0.8rem;
+}
 .price-grid__type-value, .price-grid__price-value {
     width: 100%;
     padding: 0.8rem 0;
     font-size: 1.6rem;
     line-height: 2;
-
 }
 .price-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 6rem;
     margin: 0;
+    float: right;
     border: 0.1rem solid transparent;
     border-radius: 0.8rem;
     padding: 0.8rem 0.7rem 0.6rem;
@@ -696,4 +702,52 @@ body {
 .price-btn--normal {
     border-color: rgba(0, 0, 0, 0.2);
     color: rgba(0, 0, 0, 0.4);
+}
+.mySwiper {
+    margin: 3.2rem 1.6rem!important;
+    overflow: hidden;
+}
+.mySwiper__wrapper {
+}
+.mySwiper__slide {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 133%;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2) inset;
+    z-index: 1;
+}
+.mySwiper__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+}
+.mySwiper__img {
+    width: auto;
+    height: 100%;
+}
+.nav-btn {
+    width: 100%!important;
+    max-width: 4rem;
+    height: auto!important;
+    max-height: 4rem;
+    padding: 0.8rem;
+    fill: rgba(255, 255, 255, 0.4);
+    filter: drop-shadow( 0 0 0.4rem rgba(0, 0, 0, 0.6));
+    opacity: 1!important;
+}
+.nav-btn--left16 {
+    left: 0!important;
+}
+.nav-btn--right16 {
+    right: 0!important;
+}
+.nav-btn--off {
+    fill: transparent;
 }
